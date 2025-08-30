@@ -1,0 +1,100 @@
+<html>
+<head>
+  <title>Go Mechanics</title>
+  <style>
+    div
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body 
+    {
+      font-family: Arial, sans-serif;
+    }
+
+    .container 
+    {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 150px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .box 
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .box img 
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .services 
+    { 
+      background: rgb(128, 31, 31); 
+      grid-column: span 2; 
+      width: 100%;
+      height: 100%;
+    }
+    .testimonials 
+    { 
+      background: rgb(5, 243, 243); 
+    }
+    .portfolio 
+    { 
+      background: rgb(51, 41, 227); 
+    }
+    .about 
+    { 
+      background:darkslategrey
+    }
+    .contact 
+    { 
+      background: darkgreen; 
+    }
+
+    .car-showroom 
+    { 
+      grid-row: span 2; 
+    }
+    .sports-car 
+    { 
+      grid-row: span 2; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box services">
+      <a href="https://gomechanic.in/">Car Services</a>
+    </div>
+    <div class="box car-showroom"><img src="images/l5.jpg" alt="Car Showroom"></div>
+    <div class="box testimonials">
+      <a href="https://gomechanic.in/reviews">Customer Review</a>
+    </div>
+    <div class="box city-drive"><img src="images/a1.jpg" alt="City Drive Car"></div>
+    <div class="box sports-car"><img src="images/l4.jpg" alt="Sports Car"></div>
+    <div class="box portfolio">
+      <a href="https://gomechanic.in/salem/car-suspension-fitment">Suspensions & Fitments</a>
+    </div>
+    <div class="box classic-car"><img src="images/l2.jpg" alt="Classic Car"></div>
+    <div class="box about">
+      <a href="https://en.wikipedia.org/wiki/Service_(motor_vehicle)">About Us</a>
+    </div>
+    <div class="box contact">
+      <a href="https://www.justdial.com/Salem/Go-Mechanic/nct-15409632">Contacts</a>
+    </div>
+  </div>
+</body>
+</html>

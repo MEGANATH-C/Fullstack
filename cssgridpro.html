@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    div 
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 150px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .services { background: olive; grid-column: span 2; }
+    .testimonials { background: seagreen; }
+    .portfolio{ background: firebrick; }
+    .about    { background: goldenrod; }
+    .contact  { background: steelblue; }
+
+
+    .tea      { background: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600') center/cover; grid-row: span 2; }
+    .city     { background: url('https://images.unsplash.com/photo-1473959383413-cd0d0d6df6e9?w=600') center/cover; }
+    .lake     { background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600') center/cover; grid-row: span 2; }
+    .flower   { background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600') center/cover; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box services">Services</div>
+    <div class="box tea"></div>
+    <div class="box testimonials">Testimonials</div>
+    <div class="box city"></div>
+    <div class="box lake"></div>
+    <div class="box portfolio">Portfolio</div>
+    <div class="box flower"></div>
+    <div class="box about">About Us</div>
+    <div class="box contact">Contact</div>
+  </div>
+</body>
+</html>

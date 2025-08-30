@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .grid-container
+            {
+                display: grid;
+                column-gap: 5px;
+                row-gap: 5px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                 "header header"
+                 "main sidebar"
+                 "twin1 twin2"
+                 "footer footer";
+            }
+            .header
+            {
+                background-color: rgb(26, 6, 248);
+                grid-area:header;
+                color: aliceblue;
+            }
+            .main-content
+            {
+                background-color: darkgreen;
+                grid-area: main;
+                color: aliceblue;
+            }
+            .sidebar
+            {
+                background-color: olive;
+                grid-area: sidebar;
+                color: aliceblue;
+            }
+            .twin1
+            {
+                background-color:chocolate;
+                grid-area: twin1;
+                color: aliceblue;
+            }
+            .twin2
+            {
+                background-color: coral;
+                grid-area: twin2;
+                color: aliceblue;
+            }
+            .footer
+            {
+                background-color: slateblue;
+                grid-area: footer;
+                color: aliceblue;
+            }
+            div
+            {
+                padding: 20px;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="main-content">Main</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="twin1">Twin1</div>
+        <div class="twin2">Twin2</div>
+        <div class="footer">Footer</div>
+    </div>
+</html>

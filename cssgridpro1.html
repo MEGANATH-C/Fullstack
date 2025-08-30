@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>Car Website Grid</title>
+  <style>
+    div
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body 
+    {
+      font-family: Arial, sans-serif;
+    }
+
+    .container 
+    {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 150px;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .box 
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .box img 
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .services 
+    { 
+      background: rgb(116, 32, 32); 
+      grid-column: span 2; 
+    }
+    .testimonials 
+    { 
+      background: rgb(5, 243, 243); 
+    }
+    .portfolio 
+    { 
+      background: navy; 
+    }
+    .about 
+    { 
+      background: goldenrod; 
+    }
+    .contact 
+    { 
+      background: darkgreen; 
+    }
+
+    .car-showroom 
+    { 
+      grid-row: span 2; 
+    }
+    .sports-car 
+    { 
+      grid-row: span 2; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box services">Car Services</div>
+    <div class="box car-showroom"><img src="images/l5.jpg" alt="Car Showroom"></div>
+    <div class="box testimonials">Customer Reviews</div>
+    <div class="box city-drive"><img src="images/a1.jpg" alt="City Drive Car"></div>
+    <div class="box sports-car"><img src="images/l4.jpg" alt="Sports Car"></div>
+    <div class="box portfolio">Our Cars</div>
+    <div class="box classic-car"><img src="images/l2.jpg" alt="Classic Car"></div>
+    <div class="box about">About Us</div>
+    <div class="box contact">Contact</div>
+  </div>
+</body>
+</html>
